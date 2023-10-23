@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>login & register</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css'>
+    <link rel="stylesheet" href="../css/signIn-signUp.css" />
+  </head>
+  <body>
+    <div class="ocean">
+      <div class="wave"></div>
+      <div class="wave"></div>
+  </div>
+  <!-- Log In Form Section -->
+  <section>
+      <div class="container" id="container">
+          <div class="form-container sign-up-container">
+              <form action="#">
+                  <h1>ลงทะเบียน</h1>
+                  <span>หากผู้เล่นลงทะเบียนภายในเซิฟแล้วสามารถเข้าสู่ระบบได้เลยโดยไม่ต้องลงทะเบียนซ้ำ</span>
+                  <label>
+                      <input type="text" placeholder="ชื่อภายในเกมเท่านั้น"/>
+                  </label>
+                  <label>
+                      <input type="password" placeholder="รหัสผ่าน"/>
+                  </label>
+                  <button style="margin-top: 9px">ลงทะเบียน</button>
+              </form>
+          </div>
+          <div class="form-container sign-in-container">
+              <form action="#">
+                  <h1>เข้าสู่ระบบ</h1>
+                  <span>ใส่ชื่อในเกมและรหัสผ่าน</span>
+                  <label>
+                    <input type="text" placeholder="ชื่อภายในเกมเท่านั้น"/>
+                  </label>
+                  <label>
+                      <input type="password" placeholder="รหัสผ่าน"/>
+                  </label>
+                  <a href="#">ลืมรหัสผ่าน?</a>
+                  <button>เข้าสู่ระบบ</button>
+              </form>
+          </div>
+          <div class="overlay-container">
+              <div class="overlay">
+                  <div class="overlay-panel overlay-left">
+                      <h1>เข้าสู่ระบบ</h1>
+                      <p>ใส่ชื่อในเกมและรหัสผ่าน</p>
+                      <button class="ghost mt-5" id="signIn">เข้าสู่ระบบ</button>
+                  </div>
+                  <div class="overlay-panel overlay-right">
+                      <h1>ลงทะเบียนผู้เล่น</h1>
+                      <p>หากผู้เล่นลงทะเบียนภายในเซิฟแล้วสามารถเข้าสู่ระบบได้เลยโดยไม่ต้องลงทะเบียนซ้ำ</p>
+                      <button class="ghost" id="signUp">ลงทะเบียน</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js'></script>
+    <script src="../js/signIn-signUp.js"></script>
+  </body>
+</html>

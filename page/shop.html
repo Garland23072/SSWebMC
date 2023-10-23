@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="../image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="../image/png" href="favicon-16x16.png" sizes="16x16" />
+    <title>ร้านค้า</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/shop.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <script src="https://mcapi.us/scripts/minecraft.min.js"></script>
+    <script src="../js/core.js"></script>
+    <script src="../js/shop.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="serverIp" onclick="copyIp()">
+            <p>สถานะเซิฟเวอร์ : <span class="serverStatus" id="serverStatus">...</span> Players: <span class="playersOn" id="playersOn">0</span><span class="playersMax">/</span><span class="playersMax" id="playersMax">0</span></p>
+            <p>SERVER IP » <span class="serverIpText" id="serverIpText">..</span></p>
+            
+        </div>
+        <div class="bar"></div>
+
+        <div id="bannerTop" class="bannerTop">
+            <div class="logo">
+                <a href="./home.html"><img src="../img/logo.png" alt=""></a>
+            </div>
+            
+                <a href="./home.html"><p id="title"></p></a>
+            
+        </div>
+        <div class="barTwo"></div>
+        <div class="clear"></div>
+
+
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li><a href="./home.html">Home</a></li>
+                    <li><a href="./news.html">News</a></li>
+                    <li><a href="./information.html">Information</a></li>
+                    <li><a style="color: white;" href="./shop.html">Shop</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="clear"></div>
+
+        <div class="article">
+
+            <h1 class="articleTitle">SERVER SHOP</h1>
+
+            <p class="articleDescription">
+                ผู้เล่นสามารถโอนเงินจริงเพื่อเป็นการสนับสนุนเซิฟเวอร์และนำ พอยท์มาแลกของสัมนาคุณได้
+                <br>
+                ช่องทางวอเล็ต : 085-XXX-XXXX ชื่อ XXXXXXXXXXXX
+                <br>
+                ธนาคาร : XXXXXXXXXXXX ชื่อ XXXXXXXXXXXX
+            </p>
+
+            <div class="frames">
+                <div class="itemframe">
+                    <div class="itemframeTitle">
+                        VIP 1 <br>SILVER <br>ถาวร 50 บาท
+                    </div>
+
+                    <div class="itemframeImage">
+                        <img src="../img/s.png"
+                            alt="">
+                    </div>
+
+                    <div class="itemframeText">
+                        ความสามารถยศ
+                        <br>+ /fly หรือ /cmi fly บิน
+                        <br>+ /nerfphantoms togglespawn ปิดแฟนธ่อมไม่ให้เกิดที่ตัวเอง
+                        <br>+ sethome ได้ 4 ที่
+                        <br>+ วางโพรได้ 4 ที่
+                        <br>+ ซื้อ Homezone ได้ 3
+
+                    </div>
+                </div>
+
+                <div class="itemframe">
+                    <div class="itemframeTitle">
+                        VIP 2 <br>PLATINUM <br>ถาวร 100 บาท
+                    </div>
+
+                    <div class="itemframeImage">
+                        <img src="../img/p.png"
+                            alt="">
+                    </div>
+
+                    <div class="itemframeText">
+                        ความสามารถของยศ
+                        <br>+ /cmi feed เพิ่มอาหารจนเต็ม
+                        <br>+ /wb เปิดช่องคราฟไอเท็มทันที
+                        <br>+ /cmi repair hand/all เพื่อซ่อมของบนมือหรือทั้งหมด
+                        <br>+ /sethome ได้ 5 ที่
+                        <br>+ วางโพรได้ 5 ที่
+                        <br>+ ซื้อ Homezone ได้ 4 ที่
+
+                    </div>
+                </div>
+
+                <div class="itemframe">
+                    <div class="itemframeTitle">
+                        VIP 3 <br>GOLD <br>ถาวร 200 บาท
+                    </div>
+
+                    <div class="itemframeImage">
+                        <img src="../img/g.png"
+                            alt="">
+                    </div>
+
+                    <div class="itemframeText">
+                        ความสามารถของยศ
+                        <br>+ /cmi ender เปิดหีบเอนเดอร์ได้ทุกที่
+                        <br>+ /cmi smithingtable เปิดหน้าต่างตีบวกได้ทุกที่
+                        <br>+ /cmi anvil เปิดหน้าต่างตีบวกได้ทุกที่
+                        <br>+ /cmi glow gold|White เลือกสีทองใและขาวให้ตัวละครเปล่งประกายได้
+                        <br>+ /sethome ได้ 10 ที่
+                        <br>+ วางโพรได้ 7 ที่
+                        <br>+ ซื้อ Homezone ได้ 6 ที่
+                    </div>
+                </div>
+
+                <div class="itemframe">
+                    <div class="itemframeTitle">
+                        VIP 4 <br>DIAMOND <br>ถาวร 300 บาท
+                    </div>
+
+                    <div class="itemframeImage">
+                        <img src="../img/d.png"
+                            alt="">
+                    </div>
+
+                    <div class="itemframeText">
+                        ความสามารถของยศ
+                        <br>+ /cmi glow gold|White|aqua|darkaquaเลือกสีทอง,ขาวและฟ้าอ่อนให้ตัวละครเปล่งประกายได้
+                        <br>+ พิมสีได้ในช่องแชท
+                        <br>+ พิมสีได้บนสมุด
+                        <br>+ /sethome ได้ 15 ที่
+                        <br>+ วางโพรได้ 9 ที่
+                        <br>+ ซื้อ Homezone ได้ 9 ที่
+                    </div>
+                </div>
+
+                <div class="itemframe">
+                    <div class="itemframeTitle">
+                        VIP 5 <br>MASTER <br>ถาวร 500 บาท
+                    </div>
+
+                    <div class="itemframeImage">
+                        <img src="../img/m.png"
+                            alt="">
+                    </div>
+
+                    <div class="itemframeText">
+                        ความสามารถของยศ
+                        <br>+ /time day|night ปรับเวลาได้
+                        <br>+ /weather sun|storm|rain ปรับฝนฟ้าอากาศ
+                        <br>+ /cmi glow เลือกสีได้ทุกสีให้ตัวละครเปล่งประกายได้
+                        <br>+ /cmi colorpicker เลือกสีhexได้
+                        <br>+ สามารถใส่สีลงในชื่อสิ่งที่ตีบวกที่anvilได้
+                        <br>+ /sethome ได้ 20 ที่
+                        <br>+ วางโพรได้ 12 ที่
+                        <br>+ ซื้อ Homezone ได้ 12 ที่
+                    </div>
+                </div>
+
+                <div class="itemframe">
+                    <div class="itemframeTitle">
+                        VIP 6 <br>EMERALD <br>ถาวร 1,000 บาท
+                    </div>
+
+                    <div class="itemframeImage">
+                        <img src="../img/e.png"
+                            alt="">
+                    </div>
+
+                    <div class="itemframeText">
+                        ความสามารถของยศ
+                        <br>+ /cmi inv [ชื่อผู้เล่น] ส่องของในตัวผู้เล่นได้
+                        <br>+ /cmi nick [ชื่อใหม่] [ชื่อเก่า] (ห้ามเปลี่ยนให้ผู้เล่นอื่น มิเช่นนั้นจะมีบทลงโทษ**)
+                        <br>+ /d [mod name] แปลงร่างเป็น mobนั้นๆ
+                        <br>+ /sethome ได้ 50 ที่
+                        <br>+ วางโพรได้ 50 ที่
+                        <br>+ ซื้อ Homezone ได้ 50 ที่
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="extra">
+
+        </div>
+
+
+        <div class="clear"></div>
+        <footer>
+            <p>สร้างโดย<a href="https://github.com/Garland23072"><strong>Garland23072</strong></a>/ ใช้เพื่อทำงาน Project</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
